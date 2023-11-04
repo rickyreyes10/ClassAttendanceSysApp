@@ -1,0 +1,106 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #cfc8bb; /* Use your preferred background color here */
+    font-family: 'Roboto', sans-serif;
+}
+
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.home-page-h1 {
+    color: #333;
+    margin-bottom: 40px; /* Increase spacing */
+    font-weight: 600; /* Make it bold */
+    font-size: 3.5em;
+}
+
+.professor-btn, .student-btn {
+    padding: 40px 80px; /* More padding */
+    font-size: 35px;
+    margin: 20px 0; /* More margin */
+    border: none;
+    cursor: pointer;
+    border-radius: 57px; /* Rounded edges */
+    transition: background-color 0.3s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.professor-btn {
+    background: #00704A; /* A shade of green */
+    color: white;
+}
+
+.student-btn {
+    background-color: #0055B8; /* A shade of blue */
+    color: white;
+}
+
+.menu-icon {
+    position: absolute;
+    top: 25px; /* More spacing */
+    right: 20px; /* More spacing */
+    z-index: 2; /* Ensure icon stays on top */
+}
+
+.menu {
+    background-color: #333;
+    position: absolute;
+    top: 65px; /* More spacing */
+    right: 20px; /* More spacing */
+    width: 200px; /* More width */
+    border-radius: 12px; /* Rounded edges */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    z-index: 1; /* Ensure menu is below the icon */
+}
+
+.menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    padding: 15px; /* More padding */
+    cursor: pointer;
+    border-bottom: 1px solid #555;
+    border-radius: 8px; /* Rounded edges for list items */
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.menu li:hover {
+    background-color: #555;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500; /* Make the text bolder */
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu-icon:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #888888; /* Adjust the shadow values as needed */
+    border-radius: 20%; /* This makes it circular */
+    background-color: rgba(0, 0, 0, 0.1); /* A light overlay for the hover effect */
+}
+
+.professor-btn:hover {
+    background: #005938  /* a darker shade of the original to indicate hovering */
+}
+
+.student-btn:hover {
+    background-color: #003D94  /* a darker shade of the original to indicate hovering */
+}

@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #cfc8bb;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.prof-delete-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 0;
+    min-height: 100vh;
+}
+
+.prof-delete-input-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.prof-delete-h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 4.5em;
+}
+
+.prof-delete-h2 {
+    color: #333;
+    font-weight: 600;
+    font-size: 2.0em;
+}
+
+.prof-delete-input {
+    padding: 10px 15px;
+    width: 90%; /* Reduce the width to make room for the eye icon */
+    padding-right: 30px; /* Ensure that text doesn't go behind the eye icon */
+    font-size: 3em;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 33px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Proceed button styling based on the green button you provided */
+.deleteEntry-btn {
+    padding: 35px 45px;
+    font-size: 1.8em;
+    color: #fff;
+    background-color: #D32F2F; /* A shade of green */
+    margin-top: 30px;
+    border: none;
+    border-radius: 47px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.deleteEntry-btn:hover {
+    background-color: #C1272D; /* Darker shade when hovered */
+}
+
+.Toastify__toast-container {
+    z-index: 9999 !important;
+}
+
+.toggle-password-icon {
+    position: absolute;
+    right: -35px;  /* Adjust as needed for position inside the input */
+    top: 50%;
+    transform: translateY(-70%);
+    font-size: 2em;  /* Adjust icon size */
+    cursor: pointer;
+    color: rgb(7, 7, 7)303; /* Color of the eye icon, change as desired */
+}
