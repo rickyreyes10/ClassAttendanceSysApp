@@ -1,0 +1,8 @@
+opencv-python
+pyzbar
+matplotlib
+numpy
+Pillow
+qrcode[pil]
+configparser
+mysql-connector-python 
