@@ -62,8 +62,8 @@ const ProfessorCreate = () => {
                     className="prof-create-input"
                     type="text"
                     placeholder="Enter Course Name..."
-                    name="crn"
-                    value={formData.crn}
+                    name="courseName"
+                    value={formData.courseName}
                     onChange={handleChange}
                     autoComplete="off"
                 

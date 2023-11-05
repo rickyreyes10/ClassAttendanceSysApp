@@ -1,0 +1,37 @@
+.about-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; /* Replace with your homepage background color */
+    color: #333;
+    line-height: 1.6;
+    padding: 2em; /* Adequate padding around the content */
+  }
+  
+  .about-container h1 {
+    font-size: 1.8em; /* Respectable size for the title */
+    margin-bottom: 0.5em;
+  }
+  
+  .about-container h2 {
+    font-size: 1.4em;
+    color: #555;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+  
+  .about-container p {
+    font-size: 1em; /* Standard font size for body text */
+    margin-bottom: 1em; /* Spacing between paragraphs */
+  }
+  
+  /* Responsive design adjustments */
+  @media (min-width: 768px) {
+    .about-container {
+      padding: 2em 4em; /* Larger padding on bigger screens */
+    }
+    .about-container h1 {
+      font-size: 2em; /* Slightly larger title on bigger screens */
+    }
+    .about-container h2 {
+      font-size: 1.5em;
+    }
+  }
