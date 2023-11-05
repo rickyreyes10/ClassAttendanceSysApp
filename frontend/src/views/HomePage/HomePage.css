@@ -1,9 +1,18 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #cfc8bb; /* Use your preferred background color here */
+    height: 100%; /* Full height */
     font-family: 'Roboto', sans-serif;
+    background-color: #cfc8bb; /* Fallback background color */
+    background-image: url('./image.png'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Image doesn't scroll with the page */
+    overflow-x: hidden; /* Prevents horizontal scrollbar */
 }
+
+/* Pseudo-element for blur effect */
 
 .home-page-container {
     display: flex;
@@ -11,6 +20,8 @@ html, body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    position: relative; /* Above the pseudo-element */
+    z-index: 1; /* Above the blurred background */
 }
 
 .home-page-h1 {

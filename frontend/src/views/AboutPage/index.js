@@ -4,7 +4,7 @@ import './AboutPage.css'; // This should match the CSS filename
 const About = () => {
   return (
     <div className="about-container">
-      <h1>About [Application Name]</h1>
+      <h1>About Us</h1>
       <p>Class Attendance Using Facial Recognition is the premier platform for managing academic classes and tracking attendance with ease. Designed for both professors and students, our application ensures a seamless educational experience.</p>
       <section>
         <h2>Our Mission</h2>
