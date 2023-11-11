@@ -105,6 +105,14 @@ WSGI_APPLICATION = "class_attendance_prog.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
+# Make a .env file in the same directory as settings.py, and add the following lines:
+# NAME="name of db"
+# USER="username for db"
+# PASSWORD="password for user"
+# HOST="127.0.0.1 for localhost"
+# PORT="3306"
+
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.mysql",
