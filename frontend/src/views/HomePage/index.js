@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link } from 'react-router-dom';
 
+
 const HomePage = () => {
     // State to track if the menu is open or closed
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
     return (
         <div className="home-page-container">
             <div className="menu-icon">
@@ -32,6 +32,12 @@ const HomePage = () => {
                 </div>
             )}
             <h1 className="home-page-h1">Class Attendance System</h1>
+            <p className="home-page-intro">
+          Welcome to the Class Attendance System! Our innovative platform utilizes 
+          facial recognition and QR code technology to streamline attendance tracking. 
+          Experience hassle-free, accurate, and secure class attendance management 
+          suitable for both professors and students.
+            </p>
             {/* You can add icons to these buttons */}
             <Link to="/professor-options" style={{ textDecoration: 'none', color: 'inherit'}}>
                 <button className="professor-btn">Professor</button>

@@ -1,0 +1,70 @@
+.team-page-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* You can change this to match your site's color scheme */
+  }
+  
+  .team-page-container h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* This will center the team member profiles */
+    gap: 20px; /* Adds space between the team member cards */
+  }
+  
+  .team-member {
+    width: 300px; /* Fixed width for each team member card */
+    margin-bottom: 2em;
+    background-color: #ffffff; /* Card background */
+    padding: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners for the cards */
+  }
+  
+  .team-member-image {
+    width: 100px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    border-radius: 50%; /* Circular images for team members */
+    margin: auto; /* Centers the image in the card */
+    display: block; /* Ensures the image is block-level for margin auto to work */
+  }
+  
+  .team-member h2 {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: #333;
+  }
+  
+  .team-member-role {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .team-member-skills {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .team-member-description {
+    font-size: 1em;
+    color: #666;
+    margin-top: 0.5em;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .team-members {
+      flex-direction: column;
+      align-items: center; /* Stack the profiles on smaller screens */
+    }
+  
+    .team-member {
+      width: 90%; /* Make the card width responsive */
+    }
+  }

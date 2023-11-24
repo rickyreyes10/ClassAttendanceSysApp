@@ -1,26 +1,51 @@
 .about-container {
-    font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9; /* Replace with your homepage background color */
-    color: #333;
-    line-height: 1.6;
-    padding: 2em; /* Adequate padding around the content */
-  }
-  
+  font-family: 'Arial', sans-serif;
+  color: #f2efef;
+  line-height: 1.6;
+  padding: 2em; /* Adequate padding around the content */
+  position: relative; /* For the absolute positioning of the pseudo-element */
+  overflow: hidden; /* Prevent blur from leaking outside the container */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+
+}
+
+.about-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('./image.png'); /* Update with the correct path */
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px); /* Apply the blur effect */
+  z-index: 0; /* Ensure it's behind the content */
+}
+
   .about-container h1 {
     font-size: 1.8em; /* Respectable size for the title */
     margin-bottom: 0.5em;
+    z-index: 1;
+    position: relative;
   }
   
   .about-container h2 {
     font-size: 1.4em;
-    color: #555;
+    color: #ffffff;
     margin-top: 1em;
     margin-bottom: 0.5em;
+    z-index: 1;
+    position: relative;
+    
   }
   
   .about-container p {
     font-size: 1em; /* Standard font size for body text */
     margin-bottom: 1em; /* Spacing between paragraphs */
+    z-index: 1;
+    position: relative;
   }
   
   /* Responsive design adjustments */
