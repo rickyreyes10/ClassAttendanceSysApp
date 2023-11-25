@@ -1,7 +1,16 @@
+html, body {
+  height: auto; /* Allow the body to expand as needed */
+  overflow-x: auto; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling */
+}
 .team-page-container {
-    text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9; /* You can change this to match your site's color scheme */
+  text-align: center;
+  padding: 40px 20px 20px 20px; /* Increased top padding */
+  text-align: center;
+  overflow: auto;
+  background-color: #f9f9f9;
+  margin-top: 0; /* Add margin to the top to push the content down */
+  /* rest of your styles... */
   }
   
   .team-page-container h1 {

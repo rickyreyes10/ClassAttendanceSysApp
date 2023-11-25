@@ -1,6 +1,4 @@
 html, body {
-    margin: 0;
-    padding: 0;
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
@@ -12,7 +10,7 @@ html, body {
     justify-content: center;
     width: 100vw; /* Full viewport width */
     height: 100vh; /* Full viewport height */
-    border: 2px solid transparent; /* Invisible border */
+    border: 5px solid transparent; /* Invisible border */
     box-sizing: border-box; /* This ensures the border is included in the element's total width and height */
     
 }
